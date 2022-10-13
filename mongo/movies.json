@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "Movie1",
+    "launchDate": {
+      "$date": {
+        "$numberLong": "1493444392471"
+      }
+    },
+    "rank": 1,
+    "revenue": "10000.0",
+    "_class": "com.challengexpandit.model.entity.Movie"
+  },
+  {
+    "_id": "Movie2",
+    "launchDate": {
+      "$date": {
+        "$numberLong": "1393444392471"
+      }
+    },
+    "rank": 2,
+    "revenue": "1000.0",
+    "_class": "com.challengexpandit.model.entity.Movie"
+  },
+  {
+    "_id": "Movie3",
+    "launchDate": {
+      "$date": {
+        "$numberLong": "1293444392471"
+      }
+    },
+    "rank": 10,
+    "revenue": "200.0",
+    "_class": "com.challengexpandit.model.entity.Movie"
+  },
+  {
+    "_id": "Movie4",
+    "launchDate": {
+      "$date": {
+        "$numberLong": "1093444392471"
+      }
+    },
+    "rank": 7,
+    "revenue": "600.0",
+    "_class": "com.challengexpandit.model.entity.Movie"
+  }
+]

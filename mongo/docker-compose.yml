@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: MongoDB2019!
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - mongo-compose-network
+
+  mongo-express:
+    image: mongo-express:0.49.0
+    ports:
+      - 8082:8081
+    environment:
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: MongoDB2019!
+    depends_on:
+      - 'mongo'
+    restart: unless-stopped
+    links:
+      - mongo
+    networks:
+      - mongo-compose-network
+networks: 
+    mongo-compose-network:
+      driver: bridge
+volumes:
+    mongodata:

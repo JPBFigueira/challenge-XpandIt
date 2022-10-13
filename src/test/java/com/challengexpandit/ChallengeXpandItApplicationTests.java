@@ -1,0 +1,13 @@
+package com.challengexpandit;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ChallengeXpandItApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
